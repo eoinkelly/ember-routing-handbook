@@ -1,0 +1,232 @@
+{
+  "tree": {
+    "value": {
+      "name": "application",
+      "routeHandler": {
+        "className": "ApplicationRoute",
+        "name": "application"
+      },
+      "controller": {
+        "className": "ApplicationController",
+        "name": "application",
+        "exists": true
+      },
+      "template": {
+        "name": "application"
+      },
+      "type": "resource"
+    },
+    "children": [
+      {
+        "value": {
+          "name": "loading",
+          "routeHandler": {
+            "className": "LoadingRoute",
+            "name": "loading"
+          },
+          "controller": {
+            "className": "LoadingController",
+            "name": "loading",
+            "exists": false
+          },
+          "template": {
+            "name": "loading"
+          },
+          "url": "/loading",
+          "type": "route"
+        }
+      },
+      {
+        "value": {
+          "name": "error",
+          "routeHandler": {
+            "className": "ErrorRoute",
+            "name": "error"
+          },
+          "controller": {
+            "className": "ErrorController",
+            "name": "error",
+            "exists": false
+          },
+          "template": {
+            "name": "error"
+          },
+          "url": "",
+          "type": "route"
+        }
+      },
+      {
+        "value": {
+          "name": "simple",
+          "routeHandler": {
+            "className": "SimpleRoute",
+            "name": "simple"
+          },
+          "controller": {
+            "className": "SimpleController",
+            "name": "simple",
+            "exists": true
+          },
+          "template": {
+            "name": "simple"
+          },
+          "url": "/simple",
+          "type": "route"
+        }
+      },
+      {
+        "value": {
+          "name": "posts",
+          "routeHandler": {
+            "className": "PostsRoute",
+            "name": "posts"
+          },
+          "controller": {
+            "className": "PostsController",
+            "name": "posts",
+            "exists": false
+          },
+          "template": {
+            "name": "posts"
+          },
+          "url": "/posts",
+          "type": "route"
+        }
+      },
+      {
+        "value": {
+          "name": "comments",
+          "routeHandler": {
+            "className": "CommentsRoute",
+            "name": "comments"
+          },
+          "controller": {
+            "className": "CommentsController",
+            "name": "comments",
+            "exists": false
+          },
+          "template": {
+            "name": "comments"
+          },
+          "type": "resource"
+        },
+        "children": [
+          {
+            "value": {
+              "name": "comments.loading",
+              "routeHandler": {
+                "className": "CommentsLoadingRoute",
+                "name": "comments.loading"
+              },
+              "controller": {
+                "className": "CommentsLoadingController",
+                "name": "comments.loading",
+                "exists": false
+              },
+              "template": {
+                "name": "comments/loading"
+              },
+              "url": "/comments/loading",
+              "type": "route"
+            }
+          },
+          {
+            "value": {
+              "name": "comments.error",
+              "routeHandler": {
+                "className": "CommentsErrorRoute",
+                "name": "comments.error"
+              },
+              "controller": {
+                "className": "CommentsErrorController",
+                "name": "comments.error",
+                "exists": false
+              },
+              "template": {
+                "name": "comments/error"
+              },
+              "url": "",
+              "type": "route"
+            }
+          },
+          {
+            "value": {
+              "name": "comments.new",
+              "routeHandler": {
+                "className": "CommentsNewRoute",
+                "name": "comments.new"
+              },
+              "controller": {
+                "className": "CommentsNewController",
+                "name": "comments.new",
+                "exists": false
+              },
+              "template": {
+                "name": "comments/new"
+              },
+              "url": "/comments/new",
+              "type": "route"
+            }
+          },
+          {
+            "value": {
+              "name": "comments.edit",
+              "routeHandler": {
+                "className": "CommentsEditRoute",
+                "name": "comments.edit"
+              },
+              "controller": {
+                "className": "CommentsEditController",
+                "name": "comments.edit",
+                "exists": false
+              },
+              "template": {
+                "name": "comments/edit"
+              },
+              "url": "/comments/edit/:comment_id",
+              "type": "route"
+            }
+          },
+          {
+            "value": {
+              "name": "comments.index",
+              "routeHandler": {
+                "className": "CommentsIndexRoute",
+                "name": "comments.index"
+              },
+              "controller": {
+                "className": "CommentsIndexController",
+                "name": "comments.index",
+                "exists": false
+              },
+              "template": {
+                "name": "comments/index"
+              },
+              "url": "/comments",
+              "type": "route"
+            }
+          }
+        ]
+      },
+      {
+        "value": {
+          "name": "index",
+          "routeHandler": {
+            "className": "IndexRoute",
+            "name": "index"
+          },
+          "controller": {
+            "className": "IndexController",
+            "name": "index",
+            "exists": true
+          },
+          "template": {
+            "name": "index"
+          },
+          "url": "/",
+          "type": "route"
+        }
+      }
+    ]
+  }
+}

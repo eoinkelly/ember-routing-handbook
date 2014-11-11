@@ -1,0 +1,25 @@
+{
+  "name": "simple-demo-app",
+  "version": "1.0.0",
+  "homepage": "https://github.com/eoinkelly/ember-routing-handbook",
+  "authors": [
+    "Eoin Kelly <eoin@rabidtech.co.nz>"
+  ],
+  "description": "A simple demonstration of Ember routing layer",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ember": "~1.8.1",
+    "d3": "~3.4.13"
+  }
+}
